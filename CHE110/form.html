@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-image: url(R.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        label{
+            display: block;
+            margin: 10px;
+            font-size: 30px;
+        }
+        input{
+            font-size: 20px;
+        }
+        div{
+            background-color: rgba(255, 255, 255, 0.71);
+            border-radius: 10px;
+            padding: 80px;
+            width: 500px;
+            margin: auto;
+        }
+        input[type="text"],input[type="email"],input[type="cities"],input[type="Number of Members"],input[type="Transportation"],input[type="Payment"],input[type="File"]{
+            width: 100%;
+            padding: 10px 20px;
+            border-radius: 7px;
+        }
+        input[type="submit"],input[type="reset"]{
+            background-color: rgba(64, 97, 78, 0.526);
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+            transition: 0.5s;
+
+        }
+        input:focus, select:focus{
+            background-color:cornsilk;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover{
+            background-color: darkgray;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form action="http://127.0.0.1:5500/homepage.html" method="">
+        <h2>want to visit a National Park</h2>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Fiirst Name & Last Name" id="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br>
+        <label for="cities">Select City:</label>
+        <select name="cities" id="cities">
+            <option value="Select">Select</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu annd Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Ladhak">Ladhak</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            </select>
+        <label for="cities">Select Park:</label>
+        <select name="cities" id="cities">
+            <option value="Select">Select</option>
+            <option value="Andaman and Nicobar Islands">Campbell Bay National Park</option>
+            <option value="Andhra Pradesh">Galathea National Park</option>
+            <option value="Arunachal Pradesh">Mahatma Gandhi Marine National Park</option>
+            <option value="Assam">Middle Button Island National Park</option>
+            <option value="Bihar">Mount Harriet National Park</option>
+            <option value="Chhattisgarh">North Button Island National Park</option>
+            <option value="Goa">Rani Jhansi Marine National Park</option>
+            <option value="Gujarat">Saddle Peak National Park</option>
+            <option value="Haryana">South Button Island National Park</option>
+            <option value="Himachal Pradesh">Papikonda National Park</option>
+            <option value="Jammu and Kashmir">Rajiv Gandhi National Park</option>
+            <option value="Jharkhand">Sri Venkateswara National Park</option>
+            <option value="Karnataka">Mouling National Park</option>
+            <option value="Kerala">Namdapha National Park</option>
+            <option value="Ladhak">Dibru-Saikhowa National Park</option>
+            <option value="Madhya Pradesh">Dehing Patkai National Park</option>
+            <option value="Maharashtra">Raimona National Park</option>
+            <option value="Manipur">Kaziranga National Park</option>
+            <option value="Meghalaya">Manas National Park</option>
+            <option value="Mizoram">Nameri National Park</option>
+            <option value="Nagaland">Orang National Park</option>
+            <option value="Odisha">Valmiki National Park</option>
+            <option value="Rajasthan">Guru Ghasidas National Park</option>
+            <option value="Sikkim">Indravati National Park</option>
+            <option value="Tamil Nadu">Kanger Ghati National Park</option>
+            <option value="Telangana">Mollem National Park</option>
+            <option value="Tripura">	Blackbuck National Park, Velavadar</option>
+            <option value="Tripura">Gir Forest National Park</option>
+            <option value="Tripura">Marine National Park, Gulf of Kutch</option>
+            <option value="Tripura">Vansda National Park</option>
+            <option value="Tripura">Kalesar National Park</option>
+            <option value="Tripura">Sultanpur National Park</option>
+            <option value="Tripura">Great Himalayan National Park</option>
+            <option value="Tripura">Inderkilla National Park</option>
+            <option value="Tripura">Khirganga National Park</option>
+            <option value="Tripura">Pin Valley National Park</option>
+            <option value="Tripura">Simbalbara National Park</option>
+            <option value="Tripura">Dachigam National Park</option>
+            <option value="Tripura">Kishtwar National Park</option>
+            <option value="Tripura">Kazinag National Park</option>
+            <option value="Tripura">Salim Ali National Park</option>
+            <option value="Tripura">Betla National Park</option>
+            <option value="Tripura">Anshi National Park</option>
+            <option value="Tripura">Bandipur National Park</option>
+            <option value="Tripura">Bannerghatta National Park</option>
+            <option value="Tripura">Kudremukh National Park</option>
+            <option value="Tripura">Nagarhole National Park</option>
+            <option value="Tripura">Anamudi Shola National Park</option>
+            <option value="Tripura">Eravikulam National Park</option>
+            <option value="Tripura">Mathikettan Shola National Park</option>
+            <option value="Tripura">Pampadum Shola National Park</option>
+            <option value="Tripura">Periyar National Park</option>
+            <option value="Tripura">Silent Valley National Park</option>
+            <option value="Tripura">Hemis National Park</option>
+            <option value="Tripura">Bandhavgarh National Park</option>
+            <option value="Tripura">Dinosaur Fossil National Park</option>
+            <option value="Tripura">Ghughua Fossil National Park</option>
+            <option value="Tripura">Kanha National Park</option>
+            <option value="Tripura">Kuno National Park</option>
+            <option value="Tripura">Madhav National Park</option>
+            <option value="Tripura">Panna National Park</option>
+            <option value="Tripura">Pench National Park</option>
+            <option value="Tripura">Sanjay National Park</option>
+            <option value="Tripura">Satpura National Park</option>
+            <option value="Tripura">Van Vihar National Park</option>
+            <option value="Tripura">Chandoli National Park</option>
+            <option value="Tripura">Gugamal National Park</option>
+            <option value="Tripura">Navegaon National Park</option>
+            <option value="Tripura">Sanjay Gandhi National Park</option>
+            <option value="Tripura">Tadoba Andhari National Park</option>
+            <option value="Tripura">Keibul Lamjao National Park</option>
+            <option value="Tripura">Shirui National Park</option>
+            <option value="Tripura">Balphakram National Park</option>
+            <option value="Tripura">Nokrek National Park</option>
+            <option value="Tripura">Murlen National Park</option>
+            <option value="Tripura">Phawngpui Blue Mountain National Park</option>
+            <option value="Tripura">Intanki National Park</option>
+            <option value="Tripura">Bhitarkanika National Park</option>
+            <option value="Tripura">Simlipal National Park</option>
+            <option value="Tripura">Desert National Park</option>
+            <option value="Tripura">Keoladeo National Park</option>
+            <option value="Tripura">Mukundara Hills National Park</option>
+            <option value="Tripura">Ranthambore National Park</option>
+            <option value="Tripura">Sariska Tiger Reserve</option>
+            <option value="Tripura">Khangchendzonga National Park</option>
+            <option value="Tripura">Indira Gandhi Sanctuary and National Park</option>
+            <option value="Tripura">Guindy National Park</option>
+            <option value="Tripura">Gulf of Mannar Marine National Park</option>
+            <option value="Tripura">Mudumalai National Park</option>
+            <option value="Tripura">Mukurthi National Park</option>
+            <option value="Tripura">Mahavir Harina Vanasthali National Park</option>
+            <option value="Tripura">Kasu Brahmananda Reddy National Park</option>
+            <option value="Tripura">Mrugavani National Park</option>
+            <option value="Tripura">Bison (Rajbari) National Park</option>
+            <option value="Tripura">Clouded Leopard National Park</option>
+            <option value="Tripura">Dudhwa National Park</option>
+            <option value="Tripura">Gangotri National Park</option>
+            <option value="Tripura">Govind Pashu Vihar National Park</option>
+            <option value="Tripura">Jim Corbett National Park</option>
+            <option value="Tripura">Nanda Devi National Park</option>
+            <option value="Tripura">Rajaji National Park</option>
+            <option value="Tripura">Valley of Flowers National Park</option>
+            <option value="Tripura">Buxa Tiger Reserve</option>
+            <option value="Tripura">Gorumara National Park</option>
+            <option value="Tripura">Jaldapara National Park</option>
+            <option value="Tripura">Neora Valley National Park</option>
+            <option value="Tripura">Singalila National Park</option>
+            <option value="Tripura">Sundarbans National Park</option>
+            </select>
+            <label for="Number of Members">Number of Members:</label>
+            <input type="text">
+            <label for="Transportation">Number of Vehicles required:</label>
+            <input type="radio" value="1">1
+            <input type="radio" value="2">2 
+            <input type="radio" value="3">3 
+            <input type="radio" value="4">4 
+            <input type="radio" value="5">5 
+            <label for="Payment">Payment Mode:</label>
+            <input type="radio" value="Online">Online 
+            <input type="radio" value="Cash">Cash 
+            <label for="File">Upload Information of each Member</label>
+            <input type="file"> 
+            <input type="submit" value="SUBMIT FORM">
+            <input type="reset" value="RESET">
+        
+    </form>
+    </div>
+</body>
+</html>
